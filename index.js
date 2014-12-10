@@ -2,7 +2,7 @@ function $(expr, con) { return (con || document).querySelector(expr); }
 function $$(expr, con) { return [].slice.call((con || document).querySelectorAll(expr)); }
 
 var css = [];
-
+ 
 $$('a[data-property]').forEach(function(el, i){
 	var property = el.getAttribute('data-property'),
 		from = el.getAttribute('data-from'),
